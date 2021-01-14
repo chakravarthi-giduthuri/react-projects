@@ -58,8 +58,8 @@ Global Styles
   box-sizing: border-box;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: var(--clr-grey-10);
   color: var(--clr-grey-1);
   line-height: 1.5;
@@ -96,6 +96,7 @@ p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
+
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
@@ -153,9 +154,15 @@ Tours
 */
 main {
   width: 90vw;
-  max-width: var(--fixed-width);
+  /* max-width: var(--fixed-width); */
+  max-width: 620px;
   margin: 5rem auto;
 }
+/* .grid {
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: auto auto auto;
+} */
 .loading {
   text-align: center;
 }
@@ -172,6 +179,7 @@ main {
 }
 
 .single-tour {
+  /* width: 320px; */
   background: var(--clr-white);
   border-radius: var(--radius);
   margin: 2rem 0;
